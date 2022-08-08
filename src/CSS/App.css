@@ -1,0 +1,105 @@
+body {
+  background-color: #090a0e;
+  color: white;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  gap: 45px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+}
+
+
+.movie-cover {
+  width: 100%;
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+  .container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  }
+}
+
+@media (max-width: 900px){
+  .container{
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-class{
+  margin-bottom: 2%;
+}
+
+.page-button{
+  color: rgba(71, 79, 110, 1);
+}
+
+.page-count{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+.navbar-title {
+  text-align: left;
+  font-size: 2.5rem;
+  color: white;
+  padding: auto;
+}
+
+.navbar-css {
+  text-align: left;
+}
+
+.navbar .icon-frame span{
+  position:relative;
+  top:0.5rem;
+}
+
+.App header nav{
+  line-height:1em;
+}
+
+.App header form{
+  padding-top:2rem;
+}
+
+
+.search-btn {
+   width: 10rem;
+}
+
+@media (max-width: 650px) {
+  .search-btn{
+    width: 100%;
+  }
+  .input-class{
+    margin-left: 7%;
+    margin-right: 7%;
+  } 
+}
