@@ -8,6 +8,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Description from "./components/Description.jsx";
 
 function App() {
+
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 650);
 
 	useEffect(() => {
@@ -22,15 +23,13 @@ function App() {
 	}, [isMobile]);
 
 	const API_URL = "https://api.themoviedb.org/3";
+
 	const [movies, setMovies] = useState([]);
 	const [genres, setGenres] = useState([]);
-
 	const [page, setPage] = useState(1);
 	const [totalPages, setTotalPages] = useState();
-
 	const [searchGenre, setSearchGenre] = useState("");
 	const [searchSecondGenre, setSearchSecondGenre] = useState("");
-
 	const [isOpen, setIsOpen] = useState(true);
 
 	const togglePopup = () => {
@@ -67,7 +66,6 @@ function App() {
 				page: page,
 			},
 		});
-
 		setMovies(results);
 		setTotalPages(total_pages);
 	};
@@ -80,7 +78,6 @@ function App() {
 				api_key: process.env.REACT_APP_MOVIE_API_KEY,
 			},
 		});
-
 		setGenres(genres);
 	};
 
@@ -123,11 +120,10 @@ function App() {
 				{isOpen ? <Description handleClose={togglePopup} /> : null}
 
 				<form
-					className={`${
-						isMobile
+					className={`${isMobile
 							? "d-flex flex-column justify-content-center input-class"
 							: "d-flex flex-row justify-content-center input-class"
-					}`}
+						}`}
 					onSubmit={searchMovies}
 				>
 					<div className="p-2">

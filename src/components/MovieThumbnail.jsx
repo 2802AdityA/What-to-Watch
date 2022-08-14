@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MovieCard from "./MovieCard.jsx";
 
 const MovieThumbnail = ({ movie }) => {
+	
 	const IMAGE_PATH = "https://image.tmdb.org/t/p/w500";
 	const noImage = require("../Image/no-image.jpeg");
 	const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +10,7 @@ const MovieThumbnail = ({ movie }) => {
 	const togglePopup = () => {
 		setIsOpen(!isOpen);
 	};
+
 	return (
 		<div className={"movie-card"}>
 			<div className="try">
