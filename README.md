@@ -1,5 +1,7 @@
 You Need to generate an API key from (https://www.themoviedb.org/settings/api/request) by creating an account and replace the new API key in .env file in place of "YOUR-API-KEY".
 
+Live site link - https://whatowatch.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
