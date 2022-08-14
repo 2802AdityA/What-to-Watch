@@ -10,52 +10,48 @@ body {
 
   display: grid;
   gap: 45px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
 
 .movie-cover {
   width: 100%;
 }
 
-@media (min-width: 900px) and (max-width: 1200px){
-  .container{
+@media (min-width: 900px) and (max-width: 1200px) {
+  .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
   }
 }
 
-@media (max-width: 900px){
-  .container{
+@media (max-width: 900px) {
+  .container {
     grid-template-columns: 1fr 1fr 1fr;
-    
   }
 }
 
 @media (max-width: 600px) {
-  .container{
+  .container {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 
 .title {
   text-align: center;
   font-size: 60px;
   padding-bottom: 40px;
   padding-top: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.input-class{
+.input-class {
   margin-bottom: 2%;
 }
 
-.page-button{
+.page-button {
   color: rgba(71, 79, 110, 1);
 }
 
-.page-count{
+.page-count {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
@@ -76,30 +72,29 @@ body {
   text-align: left;
 }
 
-.navbar .icon-frame span{
-  position:relative;
-  top:0.5rem;
+.navbar .icon-frame span {
+  position: relative;
+  top: 0.5rem;
 }
 
-.App header nav{
-  line-height:1em;
+.App header nav {
+  line-height: 1em;
 }
 
-.App header form{
-  padding-top:2rem;
+.App header form {
+  padding-top: 2rem;
 }
-
 
 .search-btn {
-   width: 10rem;
+  width: 10rem;
 }
 
 @media (max-width: 650px) {
-  .search-btn{
+  .search-btn {
     width: 100%;
   }
-  .input-class{
+  .input-class {
     margin-left: 7%;
     margin-right: 7%;
-  } 
+  }
 }
