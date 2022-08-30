@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../CSS/MovieCard.css";
-
 const MovieCard = (props) => {
-
 	const API_URL = "https://api.themoviedb.org/3";
 	const [movie, setMovie] = useState({
 		movie: {
@@ -16,7 +14,6 @@ const MovieCard = (props) => {
 			genres: [],
 		},
 	});
-	
 	const fetchMovie = async (movieId) => {
 		const {
 			data: {
@@ -43,7 +40,6 @@ const MovieCard = (props) => {
 			genres: genres,
 		});
 	};
-
 	fetchMovie(props.id);
 	const genre = movie.genres;
 	const noImage = require("../Image/no-image.jpeg");
@@ -52,9 +48,7 @@ const MovieCard = (props) => {
 	return (
 		<div className="popup-box">
 			<div className="box">
-				<span className="close-icon" onClick={props.handleClose}>
-					x
-				</span>
+			<button class="close-button" onClick={props.handleClose}></button>
 
 				{
 					<div className="d-flex flex-row ">
