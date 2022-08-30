@@ -31,12 +31,12 @@
 }
 
 .close-button {
-    color: #777;
-    font: 14px/100% arial, sans-serif;
+    color: white;
+    font: 25px/100% arial, sans-serif;
     position: absolute;
     right: 5px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px 0 pink;
     top: 5px;
     background-color: transparent;
     border-color: transparent;
