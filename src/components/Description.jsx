@@ -5,9 +5,7 @@ function Description(props) {
 	return (
 		<div className="popup-box">
 			<div className="box">
-				<span className="close-icon" onClick={props.handleClose}>
-					x
-				</span>
+			<button class="close-button" onClick={props.handleClose}></button>
 
 				<div className="d-flex flex-row ">
 					<div className="p-2 text">
