@@ -6,6 +6,11 @@ Well, If you enter the genre that you like, we will find movies for you accordin
 [What-to-Watch](https://whatowatch.netlify.app/)
 
 ### Screenshots
+![home](https://user-images.githubusercontent.com/84802479/199338491-5babf27b-3572-46df-8452-b781b1283f9e.png)
+
+![genre](https://user-images.githubusercontent.com/84802479/199338514-91b04243-3d65-45e7-9f9c-78c743f9f547.png)
+
+![movie-card](https://user-images.githubusercontent.com/84802479/199338536-d953bffe-d892-46f4-a48b-3d5c3ee8f660.png)
 
 ### Tech Stack Used:
 * HTML
